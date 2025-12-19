@@ -14,6 +14,8 @@ _Moving from Animal Science into the world of Technology._
 - **[MyDevOpsJourney](https://github.com/tenkaasikinn/MyDevOpsJourney)**  
   A structured 12-week roadmap documenting my transition into DevOps.
 
+- **[Bash System Monitor](https://github.com/tenkaasikinn/bash-system-monitor)**
+  Simple Bash Script for monitoring
 ---
 
 ## ⚙️ Tools & Environment

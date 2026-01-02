@@ -34,8 +34,5 @@ Redesigned operational workflows for a small business — eliminated manual repo
 ---
 
 *"From managing livestock to managing systems — same principles, different stack."*
-```
-
----
 
 

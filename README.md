@@ -6,7 +6,7 @@
 
 # Hey, I'm Irwan 👋
 
-**From Animal Husbandry to Linux and DevOps**
+**From Animal Husbandry to Linux and DevOps/Cloud**
 
 </div>
 
@@ -16,7 +16,7 @@ I started in livestock. Now I build and manage infrastructure.
 
 Somewhere along the way, I fell into the Linux rabbit hole and decided to take it seriously. No formal CS background — just hands-on learning, broken systems, and rebuilding things properly.
 
-Currently focused on becoming a **Junior DevOps Engineer**, with a strong interest in **Linux systems and infrastructure as code**.
+Currently focused on becoming a **Junior DevOps/Cloud Engineer**, with a strong interest in **Linux systems and infrastructure as code**.
 
 ---
 

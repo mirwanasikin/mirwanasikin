@@ -1,91 +1,82 @@
-<div align="center">
+# ❄️ Irwan Asikin
 
-```
-    🐄 → 🐧 → ☁️
-```
+> **_Studied Animal Science. Ended up in Linux. Life is weird._**
 
-# Hey, I'm Irwan 👋
+It started because my laptop couldn't run Windows properly. Someone online said
+try Linux. I did. Two months later I forgot I had Windows installed, wiped it,
+put Arch on manually, and somehow that became my career direction.
 
-**From Animal Husbandry to Linux and DevOps/Cloud**
+Currently daily driving NixOS on hardware from 2010 (Intel Core i3 M380, still
+alive, still compiling). Building AWS infra with Terraform, writing Ansible
+playbooks, breaking k3s clusters for fun.
 
-</div>
+Open to Junior DevOps/Cloud/SRE roles. Preferably ones that let me stay in the
+terminal.
 
----
-
-I started in livestock. Now I build and manage infrastructure.
-
-Somewhere along the way, I fell into the Linux rabbit hole and decided to take it seriously. No formal CS background — just hands-on learning, broken systems, and rebuilding things properly.
-
-Currently focused on becoming a **Junior DevOps/Cloud Engineer**, with a strong interest in **Linux systems and infrastructure as code**.
-
----
-
-## 🔧 Tech Stack
+## 🔧 Tools & Stack
 
 ```yaml
-os: NixOS # reproducible, declarative system
-hardware: Intel Core i3 M380 (yes, still alive)
-containers: Podman, Docker
-iac: Terraform
-config: Ansible
-ci_cd: GitHub Actions
-cloud: AWS (EC2, S3, IAM, VPC, SSM, OIDC)
-learning: Kubernetes (k3s → EKS)
+OS: NixOS (reproducible > convenient)
+hardware: Toshiba Satellite A665 — Intel Core i3 M380, 8GB RAM (yes, still alive)
 ```
+
+![Linux](https://img.shields.io/badge/Linux-white?style=for-the-badge&logo=linux&logoColor=black)
+![NixOS](https://img.shields.io/badge/NixOS-white?style=for-the-badge&logo=nixos)
+![Docker](https://img.shields.io/badge/Docker-white?style=for-the-badge&logo=docker&logoColor=2496ED)
+![Podman](https://img.shields.io/badge/Podman-white?style=for-the-badge&logo=podman&logoColor=892CA0)
+![Terraform](https://img.shields.io/badge/Terraform-white?style=for-the-badge&logo=terraform&logoColor=7B42BC)
+![AWS](https://img.shields.io/badge/AWS-white?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
+![Ansible](https://img.shields.io/badge/Ansible-white?style=for-the-badge&logo=ansible&logoColor=EE0000)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-white?style=for-the-badge&logo=githubactions&logoColor=2088FF)
+![Kubernetes](https://img.shields.io/badge/k3s-white?style=for-the-badge&logo=kubernetes&logoColor=326CE5)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-white?style=for-the-badge&logo=gitlab&logoColor=FC6D26)
+
+---
 
 ## 🚧 Featured Work
 
-🔹 Terraform Infrastructure (AWS)
-Designing and provisioning AWS infrastructure using Terraform:
+### 🏗️ [terraform-aws-web](https://github.com/mirwanasikin/terraform-aws-web)
 
-- Custom VPC with public & private subnets
-- EC2 instances with proper network isolation
-- IAM roles & policies with least privilege principles
-- Remote access via SSM Session Manager (no SSH exposure)
-- Modular Terraform structure for reusability
+> Full-stack AWS infrastructure — actually applied, not just planned.
 
-> Focus: building infrastructure that is secure, reproducible, and maintainable
+Architecture: `CloudFront → ALB → EC2 → RDS`, with S3 serving the frontend.
 
----
+What I focused on:
 
-🔹 CI/CD Pipeline (Flask App)
-End-to-end CI/CD using GitHub Actions:
+- **Modular structure** — each concern lives in its own module (`network`, `compute`, `load_balancer`, etc), separated by environment (dev/prod)
+- **Remote state on S3** — because local state is a disaster waiting to happen
+- **SSM-only access** — no SSH ports exposed, ever
+- **IAM least privilege** — roles scoped to what they actually need
 
-- Automated testing → build → deployment workflows
-- Containerized application deployment
-- Migration from SSH access to OIDC + SSM-based authentication
-- Separation of concerns across workflows
+Still actively building out the prod environment.
 
 ---
 
-🔹 System Automation (Ansible + NixOS)
+### ❄️ [nixos-config](https://github.com/mirwanasikin/nixos-config)
 
-- Automating personal system setup
-- Reducing manual configuration overhead
-- Exploring reproducible environments
+> My entire system, declared in Nix. If it breaks, one command fixes it.
 
----
+Running on a 2010 Toshiba (Intel Core i3 M380) — not as a flex,
+just proof that a well-configured system beats raw hardware.
 
-## 🧠 Approach
+What's inside:
 
-I focus on understanding systems deeply before automating them.
-
-The goal is simple:
-**build it manually → understand it → automate it properly**
+- **Full Home Manager integration** — userspace fully managed in Nix, no manual dotfile hunting
+- **Dotfiles via `xdg.configFile`** — Niri, Noctalia Shell, Foot, all version-controlled
+- **Modular structure** — `hosts/`, `home/modules/`, `dotfiles/` cleanly separated
+- 92 commits and counting — this is my daily driver, not a demo
 
 ---
 
 ## 📬 Open to Work
 
-Currently looking for opportunities as a Junior DevOps Engineer or Linux-focused role.
+Looking for a **Junior DevOps / Cloud / SRE** role — ideally one where Linux
+isn't an afterthought.
 
-- Interested in infrastructure, automation, and cloud systems
-- Comfortable working close to the system (Linux, networking, debugging)
+Comfortable with: infrastructure provisioning, cloud architecture, CI/CD pipelines,
+and debugging things at 2am because something in prod decided to be interesting.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/mirwanasikin)
-
----
-
-<div align="center">
-<sub>⚡ "The terminal doesn't care where you came from. Only what you type."</sub>
+<div align=left>
+<a href="https://www.linkedin.com/in/mirwanasikin"><img title="mirwanasikin" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"  height=35px width=35px/>
+</a>
 </div>

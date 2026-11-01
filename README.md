@@ -4,7 +4,7 @@
 
 It started because my laptop couldn't run Windows properly. Someone online said
 try Linux. I did. Two months later I forgot I had Windows installed, wiped it,
-put Arch on manually, and somehow that became my career direction.
+put Arch on manually, and somehow that became my career direction and my passion.
 
 Currently daily driving NixOS on hardware from 2010 (Intel Core i3 M380, still
 alive, still compiling). Building AWS infra with Terraform, writing Ansible
